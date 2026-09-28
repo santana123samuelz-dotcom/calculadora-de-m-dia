@@ -1,2 +1,2 @@
-# calculadora-de-m-dia
+# calculadora-de-media
 um sistema capaz de calcular a média aritmética de um aluno, baseado em 3 notas.
