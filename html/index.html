@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculadora de Média</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="C:\Users\Aluno\OneDrive\Documentos\projeto_03\css\style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section class="calculator-card">
+
+            <div class="header">
+                <div class="icon">📚</div>
+
+                <div>
+                    <span class="tag">SISTEMA ACADÊMICO</span>
+                    <h1>Calculadora de Média</h1>
+                    <p>
+                        Informe suas notas e descubra sua situação acadêmica.
+                    </p>
+                </div>
+            </div>
+
+            <form id="gradeForm">
+
+                <div class="inputs-grid">
+
+                    <div class="input-group">
+                        <label for="nota1">Primeira nota</label>
+                        <div class="input-wrapper">
+                            <input
+                                type="number"
+                                id="nota1"
+                                min="0"
+                                max="10"
+                                step="0.1"
+                                placeholder="0,0"
+                                required
+                            >
+                            <span>/ 10</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="nota2">Segunda nota</label>
+                        <div class="input-wrapper">
+                            <input
+                                type="number"
+                                id="nota2"
+                                min="0"
+                                max="10"
+                                step="0.1"
+                                placeholder="0,0"
+                                required
+                            >
+                            <span>/ 10</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="nota3">Terceira nota</label>
+                        <div class="input-wrapper">
+                            <input
+                                type="number"
+                                id="nota3"
+                                min="0"
+                                max="10"
+                                step="0.1"
+                                placeholder="0,0"
+                                required
+                            >
+                            <span>/ 10</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button type="submit" class="calculate-button">
+                    Calcular minha média
+                    <span>→</span>
+                </button>
+
+            </form>
+
+            <div id="resultado" class="result hidden">
+
+                <div class="result-icon" id="resultIcon">✓</div>
+
+                <div class="result-content">
+                    <span class="result-label">SUA MÉDIA</span>
+                    <strong id="media">0,0</strong>
+                    <h2 id="status">Resultado</h2>
+                    <p id="message">
+                        Confira sua situação acadêmica.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="rule">
+                <div class="rule-item">
+                    <span class="dot approved"></span>
+                    <div>
+                        <strong>Aprovado</strong>
+                        <small>Média igual ou superior a 7,0</small>
+                    </div>
+                </div>
+
+                <div class="rule-item">
+                    <span class="dot recovery"></span>
+                    <div>
+                        <strong>Recuperação</strong>
+                        <small>Média inferior a 7,0</small>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <footer>
+            <span>Calculadora de Média</span>
+            <span>•</span>
+            <span>Projeto HTML, CSS & JavaScript</span>
+        </footer>
+
+    </main>
+
+    <script src="C:\Users\Aluno\OneDrive\Documentos\projeto_03\js\script.js"></script>
+</body>
+</html>
